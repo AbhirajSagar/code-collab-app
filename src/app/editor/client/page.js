@@ -96,7 +96,6 @@ export default function EditorPage()
         <div className="w-full h-[100vh] overflow-hidden">
             <EditorNavbar workspaceName={workspaceName} peerId={peerId}/>
             <div className="w-full h-full flex">
-                <Sidebar/>
                 <div className="w-full bg-amber-400 h-full">
                     <Editor height='100vh' width='100%' defaultLanguage='javascript' value={code} onChange={(v) => handleCodeSync(v)} theme='vs-dark'/>
                 </div>
